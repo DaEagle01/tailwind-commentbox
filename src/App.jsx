@@ -11,7 +11,7 @@ function App() {
         {comment?.replies?.length > 0 && (
           <div className="flex">
             <div className="flex-shrink-0 bg-gray-200 w-[3px] mx-9 rounded-full"></div>
-            <div className="flex flex-col gap-4 max-w-xl ">
+            <div className="flex flex-col gap-4">
               {renderComments(comment?.replies, depth + 1)}
             </div>
           </div>
